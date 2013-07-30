@@ -1,0 +1,204 @@
+    /* 
+    Theme Name:   STAAR Test Maker Base Child 
+    Theme URI:   http: //staartestmaker.com/ 
+    Description: This is the child theme for the STAAR Test Maker Website 
+    Author:     Parker Jones
+    Author URI:   Parker-jones.org
+    Template: base
+    Version:    0.1
+    */  
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	font-family: verdana, helvetica, tahoma;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*
+ * End CSS reset
+ * begin custom CSS
+ */
+
+ #header_banner {
+	background-image: linear-gradient(bottom, rgb(247,255,0) 4%, rgb(255,221,0) 52%);
+	background-image: -o-linear-gradient(bottom, rgb(247,255,0) 4%, rgb(255,221,0) 52%);
+	background-image: -moz-linear-gradient(bottom, rgb(247,255,0) 4%, rgb(255,221,0) 52%);
+	background-image: -webkit-linear-gradient(bottom, rgb(247,255,0) 4%, rgb(255,221,0) 52%);
+	background-image: -ms-linear-gradient(bottom, rgb(247,255,0) 4%, rgb(255,221,0) 52%);
+	padding: .5em 0;
+}
+
+#header_contact{
+	font-size: 2em;
+	padding: .5em 0px;
+}
+
+#header_phone{
+	color: #ff0000;
+}
+
+/**
+ * Styles for the navigation
+ */
+
+/**
+ * WP reset stles for nav
+ */
+
+ 
+div.menu, 
+div.menu ul, 
+div.menu ul ul,
+div.menu ul li:hover, 
+div.menu ul li.sfHover, 
+div.menu ul a,
+div.menu ul a:focus, 
+div.menu ul a:hover, 
+div.menu ul a:active{
+	background: none;
+}
+
+.menu .current_page_item a, 
+.menu .current_page_item a:visited{
+	background: none;
+} 
+
+/*sual mode*
+ * Global Page styles
+ */
+
+body.page .entry-meta,
+body.page .entry-title{
+	display:none;
+
+}
+
+#countdown{
+	width:300px;
+	float:right;
+	margin-right: 3%;
+	position: relative;
+	bottom: 6em;
+}
+
+
+/**
+ * Custom nav styling
+ */
+
+div.menu ul li{
+	float: left;
+	display: inline;
+	padding: .25em 1.5em;
+}
+
+div.menu ul{
+	display:block;
+	margin: 2% 0;
+	margin-left: 26%	
+	padding-left: 2% 26%;
+	padding-bottom: 2%;
+	position: relative;
+	left: 3em;
+
+}
+
+.anythingSlider .content #left-side{
+	float: left;
+	padding-left: 10%
+}
+
+.anythingSlider .content #right-side{
+	float:right;
+	padding-right: 10%
+}
+
+.anythingSlider .content #right-side h1{
+	padding-left: 20%;
+}
+
+
+.anythingSlider .content .clear{
+	clear: both;
+}
+
+.anythingSlider .content h1{
+	font-size: 2.2em;
+}
+
+#slide_container{
+	padding-top: 4%;
+}
+
+/**
+ * Anything SLider Styles
+ */
+
+/*div.anythingSlider{
+
+	width: 80% !important;
+	height: 300px !important;
+}
+/*li.panel{
+	width: 80% !important;
+	height: 300px !important;
+}*/
+#floater_box{
+
+	width: 300px;
+	margin: 0 45% 0 39%;
+	position: relative;
+	top: -65px;
+	padding: 3% 0% 3% 3%;
+	background-image: linear-gradient(bottom, rgb(247,255,0) 4%, rgb(255,221,0) 52%);
+	bsual modeackground-image: -o-linear-gradient(bottom, rgb(247,255,0) 4%, rgb(255,221,0) 52%);
+	background-image: -moz-linear-gradient(bottom, rgb(247,255,0) 4%, rgb(255,221,0) 52%);
+	background-image: -webkit-linear-gradient(bottom, rgb(247,255,0) 4%, rgb(255,221,0) 52%);
+	background-image: -ms-linear-gradient(bottom, rgb(247,255,0) 4%, rgb(255,221,0) 52%);
+}
+
+#yellow_box_text{
+	font-size: 1.5em;
+	padding: 2em 0 2em 0;
+}
+

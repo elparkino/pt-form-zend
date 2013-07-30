@@ -1,0 +1,643 @@
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+body{ 
+   width:100%; 
+   background:#fff ; 
+   font-family: "Myriad Pro","Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
+   /*letter-spacing: -1px;*/
+   font-size:12px;
+}
+
+
+@charset "utf-8";
+/* CSS Document */
+
+/**{margin:0px; padding:0px;}*/
+
+
+/**** Global Elements *****/
+
+img{ border:none;}
+
+.yellow{
+   background: #ffdd4f;
+}
+
+/**
+ * Grid Structural Changes
+ */
+/**
+ * These might need to go in a media query.  We shall see. (min-width 1200px)
+ */
+.parent-row{
+   margin-left: -14px !important;
+   width: 103%;
+}
+
+.pull-right{
+   padding-left: 3%;
+}
+
+.home .parent-row,
+.staar-item-bank .parent-row,
+.pricing-ordering .parent-row{
+   margin-left: 1px !important;
+   width: 100%;
+}
+
+.img-offset{
+   padding-top: 10%;
+}
+
+
+/**
+ * Call to Motherfucking Action
+ */
+
+.cta{
+   background:#FFDD4F; 
+   padding-top:3em; 
+   padding-bottom:3em;
+   padding-left: 2%; 
+   font-size: 2em;
+   font-weight: bold;
+}
+
+.cta a{
+   color:red;
+}
+
+.cta-ish{
+   background:#fff; 
+   padding-top:3em; 
+   padding-bottom:3em;
+   padding-left: 2%; 
+   font-size: 2em;
+   font-weight: bold;  
+}
+
+
+/* =============================================================================
+   Header
+   ========================================================================== */
+
+.banner, #menu-primary-navigation, .btn, .navbar-inner{ 
+background-image: linear-gradient(bottom, #325B98 53%, #2E4974 50%);
+background-image: -o-linear-gradient(bottom, #325B98 53%, #2E4974 50%);
+background-image: -moz-linear-gradient(bottom, #325B98 53%, #2E4974 50%);
+background-image: -webkit-linear-gradient(bottom, #325B98 53%, #2E4974 50%);
+background-image: -ms-linear-gradient(bottom, #325B98 53%, #2E4974 50%);
+
+background-image: -webkit-gradient(
+   linear,
+   left bottom,
+   left top,
+   color-stop(0.53, #325B98),
+   color-stop(0.5, #2E4974)
+);
+}
+
+
+.navbar .nav>.active>a, .navbar .nav>.active>a:hover, .navbar .nav>.active>a:focus{ 
+background-image: linear-gradient(bottom, #325B98 100%, #2E4974 0%);
+background-image: -o-linear-gradient(bottom, #325B98 53%, #2E4974 0%);
+background-image: -moz-linear-gradient(bottom, #325B98 53%, #2E4974 0%);
+background-image: -webkit-linear-gradient(bottom, #325B98 53%, #2E4974 0%);
+background-image: -ms-linear-gradient(bottom, #325B98 53%, #2E4974 0%);
+
+background-image: -webkit-gradient(
+   linear,
+   left bottom,
+   left top,
+   color-stop(0.53, #325B98),
+   color-stop(0.0, #2E4974)
+);
+
+color:white;
+}
+
+.navbar .nav>.active>a:hover,
+.navbar .nav>li>a,
+.navbar .brand{
+   color:white !important;
+}
+
+.countdown-container .widgettitle{
+   font-size: 19px;
+}
+
+.header-brand-info{
+   margin-bottom: 15px;
+
+}
+
+.contact-numbers{
+   font-size: 30px;
+}
+
+
+#fax-sprite, #phone-sprite{
+
+   padding-right: 10px;
+   padding-left: 10px;
+   padding-bottom: 10px;
+}
+
+.page-header{
+   border-bottom: none;
+}
+
+.navbar .nav>li>a{
+   color:#fff;
+}
+
+.staar-logo{
+   padding-top: 20px;
+}
+
+
+/**
+ * Testimonials widget
+ */
+/*
+.testimonials_widget { margin: 20px 0 !important; }
+.testimonials_widget h2 { padding:30px 100px !important; margin: 20px 0 0 !important; background: transparent url(img/quote.png) no-repeat top left !important }
+.testimonials_widget h2, .testimonials_widget .about { font-family: Cambria, Georgia, Times, "Times New Roman", serif !important; font-style: italic !important; }
+.testimonials_widget .bio { width: 50% !important; margin: 0 auto !important}
+.testimonials_widget img {}
+.testimonials_widget .name { display:block !important; font-size: 16px !important; font-weight: bold !important; text-align: right !important; padding-right: 100px !important; min-width: 90px !important; min-height: 67px !important; background: transparent url(img/quote-end.png) no-repeat bottom right !important; }
+.testimonials_widget .link {}
+
+*/
+
+/* ==========================================================================
+   Content
+   ========================================================================== */
+
+.content { }
+
+div.anythingSlider.activeSlider .anythingWindow{
+   border-color: none !important;
+   border: none;
+}
+
+.home .index_box img{
+/*   padding-left: 30px; */
+   width: 100%;
+}
+
+.testimonials_widget{
+   padding-right: 10px;
+}
+
+.testimonials_widget h2{
+   font-size: 18px;
+   line-height: 16px;
+}
+
+.testimonials_widget img{
+   display: none;
+}
+
+.index_box{
+}
+
+#district{
+   background-color: #e6eff3;
+   width: 500px;
+   height: 500px;
+
+}
+
+#schools_index{
+   background-color: #fefee8;
+   width: 500px;
+   height: 500px;
+}
+
+#staar_download{
+width:300px;
+height:100px;
+position: relative;
+top: -50px;
+margin: 0 450px;
+
+
+   background: #fefcea;
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZlZmNlYSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjQyJSIgc3RvcC1jb2xvcj0iI2YxZGEzNiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+background: -moz-linear-gradient(top,  #fefcea 0%, #f1da36 42%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fefcea), color-stop(42%,#f1da36));
+background: -webkit-linear-gradient(top,  #fefcea 0%,#f1da36 42%);
+background: -o-linear-gradient(top,  #fefcea 0%,#f1da36 42%);
+background: -ms-linear-gradient(top,  #fefcea 0%,#f1da36 42%);
+background: linear-gradient(to bottom,  #fefcea 0%,#f1da36 42%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefcea', endColorstr='#f1da36',GradientType=0 );
+
+}
+
+.modal-body .btn.btn-primary{
+   width: 80%;
+   margin: 0 10% 10% 10%;
+
+}
+
+.et-icon{
+   color:white;
+   font-size: 18px;
+}
+
+.modal-body a.icon-button.download-icon{
+   width: 150px;
+}
+
+/**
+ * Styles for the STAAR Item Bank page, Item Bank 
+ * body classes: page-template-template-not-home-php, page-id-29
+ */
+
+
+/**
+ * Odd sections (first, third, etc)
+ */
+
+.page-id-29 div.odd-sec, div.odd-sec{
+     background:#fff; 
+/*     min-height:700px;*/
+}
+
+/**
+ * This is a crossfade from transparent to white. this needz more exploration.  I was trying to get rid of the hard line in the image fade in the Item bank page.  The gradient is good.
+ */
+
+/*div.crossfade{
+        background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjU1JSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+      background: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 55%, rgba(255,255,255,1) 100%);
+      background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,0)), color-stop(55%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,1)));
+      background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 55%,rgba(255,255,255,1) 100%);
+      background: -o-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 55%,rgba(255,255,255,1) 100%);
+      background: -ms-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 55%,rgba(255,255,255,1) 100%);
+      background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 55%,rgba(255,255,255,1) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 );
+      z-index: 9997;
+   min-height: 100%;
+}*/
+
+.page-id-29 div.odd-sec img,
+div.odd-sec img{
+    max-width: 3000% !important;
+    width: 100%;
+}
+
+.page-id-29 div.odd-sec div.text,
+div.odd-sec div.text{
+   /*min-height:700px;*/
+}
+
+.text{
+   font-size:2em;
+   line-height:1.55em; 
+}
+
+/**
+ *  Even sections (second, fourth, etc)
+ */
+
+.page-id-29 .even-sec, .even-sec{
+     background:#fff; 
+     /*min-height:700px;*/
+}
+
+.page-id-29 div.even-sec img, div.even-sec img{
+    width: 100% !important;
+    max-width: 3000% !important;
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 100%);
+}
+
+.page-id-29 .even-sec div.text, .even-sec div.text{
+   min-height:700px;
+}
+
+.page-id-29 .even-sec div.text p, .even-sec div.text p{
+   font-size:1.55em;
+   line-height:1.55em; 
+}
+
+.blue-sec{
+   background: url('/staar/assets/img/blue-gradient.png') repeat-x;
+}
+
+.yellow-sec{
+   background: url('/staar/assets/img/yellow-gradient.png') repeat-x;
+}
+
+#jon{
+   margin-bottom: 10%;
+}
+
+.order-form{
+   background: url('/staar/assets/img/button-gradient.png') repeat-x;
+   height: 60px;
+   box-shadow: 2px 4px 9px #888888;
+}
+
+
+/***************************/
+
+/************************************************************************/
+/*PHONE NUMBERS IN THE HEADER                                           */
+/************************************************************************/
+
+/**
+ * this is the header info from the other wordpress install where the menu is where it is suposed to be. Let's hope this just works. It's almost 2:30 in the afternoon.
+ */
+
+/**
+ * update 6/15/2013 I was missing a semi-colon.
+ */
+
+
+/**
+ *  * Custom nav styling
+ *   */
+
+div.menu ul li{
+        float: left;
+        display: inline;
+        padding: .25em 1.5em;
+}
+
+div.menu ul{
+        display:block;
+        margin: 2% 0;
+        margin-left: 26%;
+        padding-left: 2% 26%;
+        padding-bottom: 2%;
+        position: relative;
+        left: 3em;
+
+}
+
+
+
+ /*
+ * 
+ * This is the end of the section with pasted styles.  This is not the optimal way to do things.  REFACTOR REFACTOR REFACTOR!!! BENDOVER!
+ */
+
+.contact-numbers-box{
+   position: absolute;
+   margin: 30px 0 0 200px;
+
+}
+.clr{ clear:both;}
+#container { margin:0 auto; width:979px; height:auto;}
+#header
+      { width:979px; height:auto; padding-top:10px; padding-bottom:10px;}
+      .logo{ float:left; display:inline; width:257px;}
+      .right{float:right; display:inline; width:390px; height:auto; padding-top:10px;}
+      .right p{ font-family:Tahoma, Geneva, sans-serif; font-size:14px;}
+      .right p img{ margin-left:10px; margin-right:5px}
+      
+      
+#navigation
+      { width:979px; height:41px; margin:0 auto; position:relative; padding:0px;}
+      .l-c{ position:absolute; width:4px; height:41px; left:0px; top:0px; background:url(../images/nav-left.jpg);}
+      .r-c{ position:absolute; width:4px; height:41px; right:0px; top:0px; background:url(../images/nav-right.jpg);}
+      #navigation ul#menu{ width:979px; height:41px; list-style:none; background:url(../images/nav-bg.jpg) repeat-x top;}
+      #navigation ul#menu li{ float:left; background:url(../images/nav-separator.jpg) no-repeat left; height:39px; line-height:39px; padding-left:2px; }
+      #navigation ul#menu li a{ text-decoration:none; float:left; padding-right:27px; padding-left:27px; font-weight:bold; height:39px; line-height:39px; color:#fff;}
+      #navigation ul#menu li a:hover,
+      #navigation ul#menu li a.active{ background:url(../images/navHover.jpg) left top repeat-x;}
+      #navigation ul#menu li.home{ padding-top:8px; background:none; margin-right:10px; padding-left:10px;}
+      #navigation ul#menu li.home a{ height:30px; background:none;}
+
+
+#content
+      { width:979px;  padding-top:10px; height:auto; padding-bottom:10px; }
+      #leftBar
+            { float:left; margin-right:11px; width:169px; height:auto;}
+            .quickLinks
+                  { width:169px; height:auto;}
+                  .quickTop{ width:169px; height:25px; background:url(../images/quickTab.jpg) no-repeat;}
+                  .quickTop h1{ font-size:13px; line-height:25px; color:#fff; margin-left:10px;}
+                  
+                  .quickList
+                        { width:167px; height:auto; background: url(../images/barBS.jpg) bottom left repeat-x; border:1px solid #CCC; border-top:0px; border-bottom:0px; padding-bottom:10px;}
+                        .quickList ul#quickMenu{ list-style:none;}
+                        .quickList ul#quickMenu li{ line-height:1.7em;}
+                        .quickList ul#quickMenu li a{ width:147px; float:left; text-decoration:none; font-weight:bold; color:#000; border-bottom:1px solid #fff; background:#efefef url(../images/bulit.jpg) 97% no-repeat; padding-left:10px; padding-right:10px;}
+                        .quickList ul#quickMenu li a:hover{ color:#930;}
+                        .quickList ul#quickMenu li ul{ list-style:none; margin-left:10px; display:none;}
+                        .quickList ul#quickMenu li ul li{}
+                        .quickList ul#quickMenu li ul li a{ background:none; border:none; font-weight:normal;}
+      #textArea
+            { float:left; width:auto; height:auto;}
+            #textArea h1{ font-family:"Trebuchet MS"; font-size:25px; color:#0f588f; margin-bottom:10px;}
+            #textArea h2{
+   font-family:"Trebuchet MS";
+   font-size:16px;
+   color:#0f588f;
+   margin-bottom:10px;
+}
+            #textArea h3{
+   font-family:"Trebuchet MS";
+   font-size:16px;
+   color:#0f588f;
+   margin-bottom:10px;
+}
+            #textArea h4{ font-family:"Trebuchet MS"; font-size:26px; color:#0f588f; margin-bottom:10px;}
+            #textArea h5{ font-family:"Trebuchet MS"; font-size:24px; color:#0f588f; margin-bottom:10px;}
+            #textArea h6{}
+            #textArea p{ margin-bottom:10px;}
+            #textArea a{
+   text-decoration:none;
+   color:#0F588F;
+}
+            #textArea a:hover{ text-decoration:underline;}
+            
+            #textArea ul{ list-style:none; margin-bottom:10px;}
+            #textArea ul li{ background:url(../images/liBulit.jpg) left 5px no-repeat; padding-left:10px; line-height:1.5em ; margin-bottom:5px;}
+            #textArea hr{ border-bottom:1px solid #CCC; margin-bottom:10px;}
+            
+            #textArea .video{
+   width:620px;
+   height:60px;
+   margin-bottom:290px;
+}
+            
+      #rightBar
+            { float:right; width:169px; height:400px;}
+            #rightBar p{ margin-bottom:10px;}
+            #rightBar .schoolLinks
+                  { width:169px; height:auto;}
+                  .schoolTop{ width:169px; height:25px; background:url(../images/quickTab.jpg) no-repeat;}
+                  .schoolTop h1{ font-size:13px; line-height:25px; color:#fff; margin-left:10px;}
+                  
+                  .schoolList
+                        { width:147px; height:auto; background: url(../images/barBS.jpg) bottom left repeat-x; border:1px solid #CCC; border-top:0px; border-bottom:0px; padding:10px;}
+                        .schoolList ul{ list-style:none; margin-bottom:5px;}
+                        .schoolList ul li{ line-height:1.7em;}
+                        .schoolList ul li a{ text-decoration:none; font-weight:bold; color:#000;}
+                        .schoolList ul li a:hover{ color:#930;}
+                        .schoolList a.seeMore{ float:left; width:60px; text-decoration:none; color:#315b99; background:url(../images/seeBulit.jpg) right 5px no-repeat;}
+                        .schoolList a.seeMore:hover{ text-decoration:underline}
+      
+#footerTop
+      { width:979px; height:41px; border:1px solid #c3c3c3; border-left:0px; border-right:0px; line-height:41px;}
+      #footerTop .footerTopLeft
+            { float:left; width:625px;}
+            .footerTopLeft p{}
+            .footerTopLeft p a{ text-decoration:none; color:#000;}
+            .footerTopLeft p a:hover{ text-decoration:underline;}
+      #footerTop .footerTopRight
+            { float:right; width:350px;}
+            .footerTopRight p{ line-height:1.3em;}
+            .footerTopRight p a{ line-height:1.3em;}
+            .footerTopRight p a img{ position:relative; top:8px; margin-left:5px;}
+#footerBottom
+      { width:979px; height:auto; line-height:41px; padding-top:15px; padding-bottom:15px;}
+      #footerBottom p{ line-height:1.3em; color:#0c7bc3;}
+#Imagestable {
+   text-align: center;
+   color: #999;
+   font-weight: bold;
+   float: none;
+   margin-left: auto;
+   margin-right: auto;
+}
+.submenu {
+   font-size: 16px;
+   text-align: center;
+   font-family: Arial, Helvetica, sans-serif;
+}
+.Link1 {
+   font-family: Arial, Helvetica, sans-serif;
+   text-align: center;
+   font-size: 16px;
+   width: 550px;
+   padding-left: 50px;
+}
+#Link2 {
+}
+#Linksubjects {
+}
+.Viewdemo {
+}
+.demo {
+}
+.tabletext {
+   color: #000;
+}
+#centertext {
+   text-align: center;
+   font-weight: bold;
+   color: #0F588F;
+}
+#readingt {
+   text-align: left;
+   position: static;
+}
+textarea5 {
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 12px;
+}
+#security {
+   text-align: center;
+}
+#security {
+   font-weight: bold;
+}
+#security {
+   color: #F00;
+}
+.MiddleRed {
+   font-size: 12px;
+   font-weight: bold;
+   color: #F00;
+   text-align: center;
+}
+#comments {
+   text-align: center;
+}
+
+/**
+ * This is style1.css
+ */
+
+
+
+
+/* ==========================================================================
+   Primary Content
+   ========================================================================== */
+
+.main { }
+
+
+
+/* ==========================================================================
+   Sidebar
+   ========================================================================== */
+
+.sidebar { }
+
+
+
+/* ==========================================================================
+   Posts
+   ========================================================================== */
+
+.hentry header { }
+.hentry time { }
+.hentry .byline { }
+.hentry .entry-content { }
+.hentry footer { }
+
+
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+.content-info { }
+
+.vcard br{
+	display: none;
+}
+
+.vcard span{
+	padding-right: 5px;
+}
+.widget-inner h3{
+	display:none;
+}
+
+.twitter_icon img,
+.pin_icon img{
+	width: 50px;
+	height: 50px;
+	padding: 0 2px;
+	display:inline;
+}
+
+/* ==========================================================================
+   WordPress Generated Classes
+   See: http://codex.wordpress.org/CSS#WordPress_Generated_Classes
+   ========================================================================== */
+
+.aligncenter { display: block; margin: 0 auto; }
+.alignleft { float: left; }
+.alignright { float: right; }
+figure.alignnone { margin-left: 0; margin-right: 0; }
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media (max-width: 767px) {
+
+}

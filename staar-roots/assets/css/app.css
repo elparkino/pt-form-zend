@@ -1,0 +1,517 @@
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+body{ 
+   width:100%; 
+   background:#fff ; 
+   font-family: "Myriad Pro","Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
+   /*letter-spacing: -1px;*/
+   font-size:12px;
+}
+
+
+@charset "utf-8";
+/* CSS Document */
+
+/**{margin:0px; padding:0px;}*/
+
+
+/**** Global Elements *****/
+
+img{ border:none;}
+
+.yellow{
+   background: #ffdd4f;
+}
+
+.navbar .btn{
+  margin-bottom: 5px;
+}
+
+/**
+ * Grid Structural Changes
+ */
+/**
+ * These might need to go in a media query.  We shall see. (min-width 1200px)
+ */
+.parent-row{
+   margin-left: -14px !important;
+   width: 103%;
+}
+
+.pull-right{
+   padding-left: 3%;
+}
+
+.home .parent-row,
+.staar-item-bank .parent-row,
+.pricing-ordering .parent-row{
+   margin-left: 1px !important;
+   width: 100%;
+}
+
+.img-offset{
+   padding-top: 10%;
+}
+
+
+/**
+ * Call to Motherfucking Action
+ */
+
+.cta{
+   background:#FFDD4F; 
+   padding-top:3em; 
+   padding-bottom:3em;
+   padding-left: 2%; 
+   font-size: 2em;
+   font-weight: bold;
+}
+
+.cta a{
+   color:red;
+}
+
+.cta-ish{
+   background:#fff; 
+   padding-top:3em; 
+   padding-bottom:3em;
+   padding-left: 2%; 
+   font-size: 2em;
+   font-weight: bold;  
+}
+
+
+/* =============================================================================
+   Header
+   ========================================================================== */
+
+#surveyMonkeyInfo{
+   margin: 0 35% 0 0;
+}
+
+.page-id-331 #sm_e_s .pTitle{
+   background-color: none;
+   display: none !important;
+
+}
+
+#surveyMonkeyInfo .sTitle{
+   background-color: none;
+   display: none !important;
+}
+
+.banner, #menu-primary-navigation, .btn, .navbar-inner{ 
+background-image: linear-gradient(bottom, #325B98 53%, #2E4974 50%);
+background-image: -o-linear-gradient(bottom, #325B98 53%, #2E4974 50%);
+background-image: -moz-linear-gradient(bottom, #325B98 53%, #2E4974 50%);
+background-image: -webkit-linear-gradient(bottom, #325B98 53%, #2E4974 50%);
+background-image: -ms-linear-gradient(bottom, #325B98 53%, #2E4974 50%);
+
+background-image: -webkit-gradient(
+   linear,
+   left bottom,
+   left top,
+   color-stop(0.53, #325B98),
+   color-stop(0.5, #2E4974)
+);
+}
+
+
+.navbar .nav>.active>a, .navbar .nav>.active>a:hover, .navbar .nav>.active>a:focus{ 
+background-image: linear-gradient(bottom, #325B98 100%, #2E4974 0%);
+background-image: -o-linear-gradient(bottom, #325B98 53%, #2E4974 0%);
+background-image: -moz-linear-gradient(bottom, #325B98 53%, #2E4974 0%);
+background-image: -webkit-linear-gradient(bottom, #325B98 53%, #2E4974 0%);
+background-image: -ms-linear-gradient(bottom, #325B98 53%, #2E4974 0%);
+
+background-image: -webkit-gradient(
+   linear,
+   left bottom,
+   left top,
+   color-stop(0.53, #325B98),
+   color-stop(0.0, #2E4974)
+);
+
+color:white;
+}
+
+.navbar .nav>.active>a:hover,
+.navbar .nav>li>a,
+.navbar .brand{
+   color:white !important;
+}
+
+.countdown-container .widgettitle{
+   font-size: 19px;
+}
+
+.header-brand-info{
+   margin-bottom: 15px;
+
+}
+
+.contact-numbers{
+   font-size: 30px;
+}
+
+
+#fax-sprite, #phone-sprite{
+
+   padding-right: 10px;
+   padding-left: 10px;
+   padding-bottom: 10px;
+}
+
+.page-header{
+   border-bottom: none;
+}
+
+.navbar .nav>li>a{
+   color:#fff;
+}
+
+.staar-logo{
+   padding-top: 20px;
+}
+
+/*
+ * Download Page
+ */
+
+#container{
+   width:auto;
+   padding-top:10px;
+   padding-left: 5.5%;
+   text-align:left;
+   background:#efefef;
+   border:1px solid #ccc;
+   -moz-border-radius:5px;
+   -webkit-border-radius:5px;
+   -moz-box-shadow: 0px 0px 6px #aaa;
+   -webkit-box-shadow: 0px 0px 6px #aaa;
+}
+
+#container .well{
+   background:#fff;
+   border:1px solid #ccc;
+   -moz-border-radius:5px;
+   -webkit-border-radius:5px;
+   -moz-box-shadow: 0px 0px 6px #aaa;
+   -webkit-box-shadow: 0px 0px 6px #aaa;
+}
+
+#container .span4{
+   margin: 0 .5% 0 0;
+   padding: 0 0 0 0;
+}
+
+.item-container{
+   height: 325px;
+}
+
+.modal-body{
+  max-height: 800px !important;
+}
+/**
+ * Testimonials widget
+ */
+/*
+.testimonials_widget { margin: 20px 0 !important; }
+.testimonials_widget h2 { padding:30px 100px !important; margin: 20px 0 0 !important; background: transparent url(img/quote.png) no-repeat top left !important }
+.testimonials_widget h2, .testimonials_widget .about { font-family: Cambria, Georgia, Times, "Times New Roman", serif !important; font-style: italic !important; }
+.testimonials_widget .bio { width: 50% !important; margin: 0 auto !important}
+.testimonials_widget img {}
+.testimonials_widget .name { display:block !important; font-size: 16px !important; font-weight: bold !important; text-align: right !important; padding-right: 100px !important; min-width: 90px !important; min-height: 67px !important; background: transparent url(img/quote-end.png) no-repeat bottom right !important; }
+.testimonials_widget .link {}
+
+*/
+
+/* ==========================================================================
+   Content
+   ========================================================================== */
+
+.content { }
+
+div.anythingSlider.activeSlider .anythingWindow{
+   border-color: none !important;
+   border: none;
+}
+
+.home .index_box img{
+/*   padding-left: 30px; */
+   width: 100%;
+}
+
+.testimonials_widget{
+   padding-right: 10px;
+}
+
+.testimonials_widget h2{
+   font-size: 18px;
+   line-height: 16px;
+}
+
+.testimonials_widget img{
+   display: none;
+}
+
+.index_box{
+}
+
+#district{
+   background-color: #e6eff3;
+   width: 500px;
+   height: 500px;
+
+}
+
+#schools_index{
+   background-color: #fefee8;
+   width: 500px;
+   height: 500px;
+}
+
+#staar_download{
+width:300px;
+height:100px;
+position: relative;
+top: -50px;
+margin: 0 450px;
+
+
+   background: #fefcea;
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZlZmNlYSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjQyJSIgc3RvcC1jb2xvcj0iI2YxZGEzNiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+background: -moz-linear-gradient(top,  #fefcea 0%, #f1da36 42%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fefcea), color-stop(42%,#f1da36));
+background: -webkit-linear-gradient(top,  #fefcea 0%,#f1da36 42%);
+background: -o-linear-gradient(top,  #fefcea 0%,#f1da36 42%);
+background: -ms-linear-gradient(top,  #fefcea 0%,#f1da36 42%);
+background: linear-gradient(to bottom,  #fefcea 0%,#f1da36 42%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefcea', endColorstr='#f1da36',GradientType=0 );
+
+}
+
+.modal-body .btn.btn-primary{
+   width: 80%;
+   margin: 0 10% 10% 10%;
+
+}
+
+.et-icon{
+   color:white;
+   font-size: 18px;
+}
+
+.modal-body a.icon-button.download-icon{
+   width: 150px;
+}
+
+/**
+ * Styles for the STAAR Item Bank page, Item Bank 
+ * body classes: page-template-template-not-home-php, page-id-29
+ */
+
+
+/**
+ * Odd sections (first, third, etc)
+ */
+
+.page-id-29 div.odd-sec, div.odd-sec{
+     background:#fff; 
+/*     min-height:700px;*/
+}
+
+/**
+ * This is a crossfade from transparent to white. this needz more exploration.  I was trying to get rid of the hard line in the image fade in the Item bank page.  The gradient is good.
+ */
+
+/*div.crossfade{
+        background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjU1JSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+      background: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 55%, rgba(255,255,255,1) 100%);
+      background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,0)), color-stop(55%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,1)));
+      background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 55%,rgba(255,255,255,1) 100%);
+      background: -o-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 55%,rgba(255,255,255,1) 100%);
+      background: -ms-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 55%,rgba(255,255,255,1) 100%);
+      background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 55%,rgba(255,255,255,1) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 );
+      z-index: 9997;
+   min-height: 100%;
+}*/
+
+.page-id-29 div.odd-sec img,
+div.odd-sec img{
+    max-width: 3000% !important;
+    width: 100%;
+}
+
+.page-id-29 div.odd-sec div.text,
+div.odd-sec div.text{
+   /*min-height:700px;*/
+}
+
+.text{
+   font-size:1.29em;
+   line-height:1.55em; 
+}
+
+/**
+ *  Even sections (second, fourth, etc)
+ */
+
+.page-id-29 .even-sec, .even-sec{
+     background:#fff; 
+     /*min-height:700px;*/
+}
+
+.page-id-29 div.even-sec img, div.even-sec img{
+    width: 100% !important;
+    max-width: 3000% !important;
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 100%);
+}
+
+.page-id-29 .even-sec div.text, .even-sec div.text{
+   min-height:700px;
+}
+
+.page-id-29 .even-sec div.text p, .even-sec div.text p{
+   font-size:1.55em;
+   line-height:1.55em; 
+}
+
+.blue-sec{
+   background: url('/staar/assets/img/blue-gradient.png') repeat-x;
+}
+
+.yellow-sec{
+   background: url('/staar/assets/img/yellow-gradient.png') repeat-x;
+}
+
+#jon{
+   margin-bottom: 10%;
+}
+
+.order-form{
+   background: url('/staar/assets/img/button-gradient.png') repeat-x;
+   height: 60px;
+}
+
+
+/***************************/
+
+/************************************************************************/
+/*PHONE NUMBERS IN THE HEADER                                           */
+/************************************************************************/
+
+/**
+ * this is the header info from the other wordpress install where the menu is where it is suposed to be. Let's hope this just works. It's almost 2:30 in the afternoon.
+ */
+
+/**
+ * update 6/15/2013 I was missing a semi-colon.
+ */
+
+
+/**
+ *  * Custom nav styling
+ *   */
+
+div.menu ul li{
+        float: left;
+        display: inline;
+        padding: .25em 1.5em;
+}
+
+div.menu ul{
+        display:block;
+        margin: 2% 0;
+        margin-left: 26%;
+        padding-left: 2% 26%;
+        padding-bottom: 2%;
+        position: relative;
+        left: 3em;
+
+}
+
+
+
+ /*
+ * 
+ * This is the end of the section with pasted styles.  This is not the optimal way to do things.  REFACTOR REFACTOR REFACTOR!!! BENDOVER!
+ */
+
+
+
+/* ==========================================================================
+   Primary Content
+   ========================================================================== */
+
+.main { }
+
+
+
+/* ==========================================================================
+   Sidebar
+   ========================================================================== */
+
+.sidebar { }
+
+
+
+/* ==========================================================================
+   Posts
+   ========================================================================== */
+
+.hentry header { }
+.hentry time { }
+.hentry .byline { }
+.hentry .entry-content { }
+.hentry footer { }
+
+
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+.content-info { }
+
+.vcard br{
+	display: none;
+}
+
+.vcard span{
+	padding-right: 5px;
+}
+.widget-inner h3{
+	display:none;
+}
+
+.twitter_icon img,
+.pin_icon img{
+	width: 50px;
+	height: 50px;
+	padding: 0 2px;
+	display:inline;
+}
+
+/* ==========================================================================
+   WordPress Generated Classes
+   See: http://codex.wordpress.org/CSS#WordPress_Generated_Classes
+   ========================================================================== */
+
+.aligncenter { display: block; margin: 0 auto; }
+.alignleft { float: left; }
+.alignright { float: right; }
+figure.alignnone { margin-left: 0; margin-right: 0; }
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media (max-width: 767px) {
+
+}

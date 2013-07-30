@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items>
+	<item filename="01.jpg"
+		url="index.html" 
+		target="_parent"
+		title="Welcome to Pool Rehab" 
+		description="Pool Rehab is dedicated to providing our customers with 100% satisfaction guaranteed work. We are a leader in pool tile cleaning..." />
+	<item filename="02.jpg"
+		url="services.html" 
+		target="_parent" 
+		title="Pool Tile Cleaning Service" 
+		description="Pool Rehab specialize in all restoration services including pool tile cleaning, Deck O Seal, pool tile repair, rock repair, rock painting and repainting and acid washes." />
+	<item filename="03.jpg"
+		url="testimonials.html" 
+		target="_parent"
+		title="Testimonials" 
+		description="I thought for sure our tile had had it and we would have to replace it. Pool Rehab did an amazing job and restored it back to the way it was when it was new." />
+	<item filename="04.jpg"
+		url="contact.php" 
+		target="_parent"
+		title="Contact Us" 
+		description="We take pride in our work and in calling back all our inquiries in a quick time frame. Call or submit a quote request today so we can prepare your pool for pool season." />
+</items>
