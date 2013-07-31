@@ -23,7 +23,7 @@ Template Name: Footer Template
 
     </div>    
     <div class="row-fluid">
-
+    
     </div>
 </div>
 
